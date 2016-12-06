@@ -11,12 +11,11 @@ namespace DesignByContract_assignment
         private static void Main(string[] args)
         {
             Console.Title = "Your account";
-            Account account = new Account();
+            Account account = new Account(1000.00);
             bool running = true;
             Console.WriteLine("To deposit a amount press d and then enter the amount and press Enter");
             Console.WriteLine("To withdraw an amount press w and then enter the amount and press Enter");
             Console.WriteLine("To Exit program press e");
-            Console.WriteLine("Your current balance is: {0}", account.Balance);
             while (running)
             {
                 Console.WriteLine("Ready for Command:");
